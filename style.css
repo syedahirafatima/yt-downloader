@@ -1,0 +1,69 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://i.ibb.co/jkVVBRcc/Elegant-Cinematic-Wedding-Thumbnail-HD-169-2.png') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  margin: 0;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  background: #fff3f0;
+  border: 2px solid #ef9a9a;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+h1 {
+  color: #d32f2f;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  border: 2px solid #ef9a9a;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #d32f2f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #b71c1c;
+}
+
+.messages p {
+  background-color: #ffcdd2;
+  padding: 10px;
+  border-radius: 8px;
+  color: #b71c1c;
+  margin-top: 10px;
+}
